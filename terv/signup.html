@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+    <header style="text-align: center;">
+        <div>
+        <h1>Welcome to the terv world</h1>
+        </div>
+    </header>
+    <br>
+    <section>
+    <section class="lr">
+        <section class="lrc">
+            <img src="./images/Frame2.d2941aa0.png" alt="">
+        </section>
+        <section class="llc">
+            <form action="" class="dee" style="text-align: center;">
+                <br>
+                <br>
+                <div class="user">
+                    <input type="text" placeholder="First Name">
+                </div>
+                <br>
+                <div class="user">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <br>
+                <div class="user">
+                    <input type="email" placeholder="Email">
+                </div>
+                <br>
+                <div class="user">
+                    <input type="date" placeholder="Date Of Birth">
+                </div>
+                <br>
+                <div class="user">
+                    <select>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>                
+                <br>
+                <div class="user">
+                    <input type="password" placeholder="Password">
+                </div>
+                <br>
+                <div class="user">
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+                <br>
+                <div class="user" >
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+                <br>
+                <div class="button">
+                    <input type="button" value="Submit" style="font-size: 20px;">
+                </div>
+                <br>
+                <div class="tacbox">
+                    <input type="checkbox" placeholder="">
+                    <label for="tac">I agree to the terms and conditions</label>
+                </div>
+                <br>
+                <div class="bttn">
+                    <input type="button" value="Cancel">
+                    <input type="button" value="SignUp">
+                  </div>
+                  <br>
+                <div style="text-align: center;">
+                    <label for="">Already have an account?</label>
+                    <br>
+                    <a href="./home.html" style="text-align: center; color: blue; font-style: italic; " >Login</a>
+                </div>
+                <br>
+            </form>
+        </section>
+    </section>
+    </section>
+
+    <script>
+        function validateSignUpForm() {
+            var firstName = document.querySelector('input[placeholder="First Name"]').value;
+            var lastName = document.querySelector('input[placeholder="Last Name"]').value;
+            var email = document.querySelector('input[placeholder="Email"]').value;
+            var dob = document.querySelector('input[placeholder="Date Of Birth"]').value;
+            var gender = document.querySelector('select').value;
+            var password = document.querySelector('input[placeholder="Password"]').value;
+            var confirmPassword = document.querySelector('input[placeholder="Confirm Password"]').value;
+            var phoneNumber = document.querySelector('input[placeholder="Phone Number"]').value;
+            var termsChecked = document.querySelector('input[type="checkbox"]').checked;
+
+            if (firstName === "" || lastName === "" || email === "" || dob === "" || gender === "" || password === "" || confirmPassword === "" || phoneNumber === "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+
+            if (!termsChecked) {
+                alert("Please agree to the terms and conditions.");
+                return false;
+            }
+
+            alert("Sign-up successful!");
+            return true;
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var submitButton = document.querySelector('input[type="button"][value="Submit"]');
+            submitButton.addEventListener('click', function () {
+                validateSignUpForm();
+            });
+        });
+    </script>
+</body>
+</html>

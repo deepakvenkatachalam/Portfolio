@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak V's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../items/IMG_20220115_132902.jpg">
+<style>
+        .contact-form {
+            background-color: #2a2a2a;
+            padding: 3%;
+            border-radius: 15px;
+        }
+        p {
+            color: rgb(222, 222, 222);
+        }
+        .contact-form label {
+            color: rgb(220, 220, 220);
+            display: block;
+            margin-bottom: 5px;
+            padding: 0.7%;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .contact-form button, .resume-link {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .social-links {
+            text-align: center;
+            margin: 20px;
+        }
+        .social-links a {
+            margin: 0 12px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .social-links a:hover {
+            transform: scale(1.5);
+        }
+        .social-links img {
+            padding-bottom: 70%;
+            width: 62px;
+            height: 62px;
+            vertical-align: middle;
+        }
+        .vertical-line {
+            border-left: 3px solid #666;
+            height: 52px;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        hr {
+            border: 3px solid #666;
+            height: 2px;
+            background-color: #666; 
+            width: 70%;
+            margin: 40px auto;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 1.7rem;
+            font-weight: bold;
+            font-style: italic;
+            background-color: #ffffff;
+            color: rgb(0, 255, 0);
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Deepak V</h1>
+        <h5>Aspiring Web Developer</h5>
+        <nav>
+            <a href="#about">About me</a>
+            <a href="#skillss">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="items/IMG_20220115_132902.jpg" alt="Deepak V">
+        <p style="color: rgb(228, 228, 228);">Hi, I'm Deepak V, a passionate web developer with experience in HTML, CSS, and JavaScript. I love creating beautiful and functional websites.</p>
+    </section>
+
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/deepakvenk" target="_blank">
+            <img src="items/icons8-linkedin-48.png" alt="LinkedIn">
+        </a>
+        <span class="vertical-line"></span>
+        <a href="https://github.com/deepakvenkatachalam" target="_blank">
+            <img style="height: 45px;width:50px;" src="items/github9775.jpg" alt="GitHub">
+        </a>
+        <span class="vertical-line"></span>
+        <a href="mailto:deepakvenkatachalam3@gmail.com" target="_blank">
+            <img src="items/icons8-gmail-48.png" alt="Gmail">
+        </a>
+    </div>
+<hr>
+    <!-- Skills Section -->
+    <section id="skillss" style="text-align: center;">
+        <h2 style="padding-right: 40%;">SKILLS</h2>
+        <div class="proficiency">
+            <div class="skill">
+                <span class="skill-name">HTML</span>
+                <div class="skill-bar">
+                    <div class="skill-level html"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">CSS</span>
+                <div class="skill-bar">
+                    <div class="skill-level css"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Java</span>
+                <div class="skill-bar">
+                    <div class="skill-level java"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">SQL</span>
+                <div class="skill-bar">
+                    <div class="skill-level sql"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<hr>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <a href="../restaurant web/index.html"> 
+            <h3>Hotel Restaurant Website -->(Click This) </h3>
+            <img src="../items/hotel.jpg.jpg" alt="Project 1">
+            <p style="color: rgb(5, 5, 5);"><b>Description :</b> <br>This project creates a simple restaurant website where users can view the menu and 
+                make reservations. It features HTML and CSS with basic Java Script for backend 
+                functionality.</p> </a>
+        </div>
+        <br>
+        <br>
+        <div class="project">
+            <a href="../terv/home.html">
+            <h3>Responsive Login-Signup Form</h3>
+            <img src="../items/photo-collage.png.png" alt="Project 2">
+            <p style="color: rgb(0, 0, 0);"><b>Description :</b> <br>This project creates a landing page with login and signup form where users can register themselves It features HTML and CSS with basic Java Script for backend 
+                functionality.</p>
+        </div></a>
+    </section>
+
+    <hr>
+    <br>
+    <section id="resume">
+        <h2>Resume</h2>
+        <p style="text-align: center;">Download my resume to learn more about my experience and qualifications.</p>
+        <a href="../items/DEEPAK_V-RESUME.pdf" class="resume-link" download>Download Resume (PDF)</a>
+    </section>
+    <br>
+<hr>
+     <br>
+     <br>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p style="padding-left:1%;">Email: deepakvenkatachalam3@gmail.com</p>
+        <p style="padding-right: 20%;">Phone: +91-9976376884 </p>
+        <br>
+        <form id="contactForm" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <div id="successMessage" class="message"></div>
+    </section>
+    <br>
+    <br>
+<hr>
+    <footer>
+        <p>&copy; 2024 Deepak V. All rights reserved.</p>
+        <p>
+            <a href="https://linkedin.com/in/johndoe">LinkedIn</a> |
+            <a href="https://github.com/johndoe">GitHub</a>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const successMessageElement = document.getElementById('successMessage');
+            
+            if (!name || !email || !message) {
+                successMessageElement.innerText = 'Please fill in all fields.';
+                successMessageElement.style.color = 'red';
+                return;
+            }
+            
+            const successMessage = `Dear ${name}, your message was successfully sent to Deepak.`;
+            successMessageElement.innerText = successMessage;
+            successMessageElement.style.color = 'green';
+            
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+
+</script>
+</body>
+</html>

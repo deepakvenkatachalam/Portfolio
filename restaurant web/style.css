@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('./images/g3.jpg') no-repeat center center/cover;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.3); 
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding-left: 25%;
+}
+
+.overlay1 {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding-left: 25%;
+}
+
+header {
+    background-color: #343a40;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #343a40;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+    
+    header nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .card-deck {
+        flex-direction: column;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #343a40;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+    
+    header nav ul li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item
+{
+    color: #f8f9fa;
+}
+.blockquote-footer
+{
+    color: #f8f9fa;
+    font-style: italic;
+    padding-left: 50%;
+}
+
+.deep
+{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+#reservationForm
+{
+    padding: 2%;
+    margin: 2%;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+}

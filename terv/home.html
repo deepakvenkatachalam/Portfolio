@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header style="text-align: center;">
+        <div>
+        <h1>Welcome to the terv world</h1>
+        </div>
+    </header>
+    <br>
+    <section>
+    <section class="lr">
+        <section class="lrc">
+            <img src="./images/Frame2.d2941aa0.png" alt="">
+        </section>
+        <section class="llc">
+                <form action="" class="kk" style="text-align: center;">
+                    <br>
+                    <br>
+                    <br>
+                    <div class="user">
+                        <input type="text"placeholder="UserName">
+                    </div>
+                    <br>
+                    <div class="user">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <br>
+                    <a href="#">
+                        <h5>Forget Password</h5>
+                    </a>
+                    <br>
+                    <div class="button">
+                        <input type="button" value="Log In"  >
+                    </div>
+                    <br>
+                    <a href="#">
+                        <h5>New to terv, SignUP</h5>
+                    </a>
+                    <br>
+                    <div class="button">
+                        <a href="./signup.html">
+                        <input type="button" value="Sign Up" ></a>
+                    </div>
+                    <br>                
+                    <section class="logos">
+                    <div class="logo">
+                        <img src="./images/twitter.png" alt="Logo 1">
+                    </div>
+                    <div class="logo">
+                        <img src="./images/icons8-instagram-48.png" alt="Logo 1">
+                    </div> 
+                    <div class="logo">
+                        <img src="./images/icons8-linkedin-48.png" alt="Logo 1">
+                    </div> 
+                </section>
+                </form>
+
+                </section>
+        </section>
+    </section>
+</section>
+<script>
+    function validateForm() {
+        var username = document.querySelector('input[type="text"]').value;
+        var password = document.querySelector('input[type="password"]').value;
+
+        if (username === "") {
+            alert("Please enter your username.");
+            return false;
+        }
+
+        if (password === "") {
+            alert("Please enter your password.");
+            return false;
+        }
+
+        alert("Login successful!");
+        return true;
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var loginButton = document.querySelector('input[type="button"][value="Log In"]');
+        loginButton.addEventListener('click', function () {
+            validateForm();
+        });
+    });
+</script>
+</body>
+</html>
